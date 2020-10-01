@@ -11,8 +11,8 @@ pipeline {
                     submoduleCfg: [],
                     userRemoteConfigs: [[url: 'https://github.com/Chi996/jenkins-test-project3.git']]
                 ])
-                cmd 'echo Checking out the scripts repository $GIT_BRANCH'
-                cmd 'dir'
+                bat 'echo Checking out the scripts repository $GIT_BRANCH'
+                bat 'dir'
             }
         }
     }
