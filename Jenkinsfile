@@ -5,7 +5,7 @@ pipeline {
             steps {
                 checkout([
                     $class: 'GitSCM',
-                    branches: [[name: '$GIT_BRANCH']],
+                    branches: [[name: 'master']],
                     doGenerateSubmoduleConfigurations: false,
                     extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: '.']],
                     submoduleCfg: [],
